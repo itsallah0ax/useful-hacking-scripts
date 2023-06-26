@@ -1,0 +1,5 @@
+# useful-hacking-scripts
+
+This is a simple python script that takes hex input from a specified file using the '-i' arg, and then outputs the human-readable version to your CLI.
+
+Usage: python3 hex-to-text.py -i <file_you_want_to_convert>
