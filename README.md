@@ -2,7 +2,7 @@
 
 # Hex To Human Readable Text Script
 
-This is a simple python script that takes hex input from a specified file using the '-i' arg, and then outputs the human-readable version to your CLI.
+This is a simple python script that takes hex input from a specified file using the '-i' arg, and then outputs the human-readable version to STDOUT on your CLI.
 
 Usage: 
 ```
