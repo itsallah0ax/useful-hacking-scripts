@@ -1,3 +1,5 @@
+#Fun lil thing I made, give me a follow: itsallah0ax :)
+#!/usr/bin/env python3
 import argparse
 import re
 
