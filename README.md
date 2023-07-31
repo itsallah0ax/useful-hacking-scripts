@@ -9,7 +9,7 @@ Usage:
 python3 hex-to-text.py -i <file_you_want_to_convert>
 ```
 
-## Nmap result parsing for easy copy/paste
+## Nmap/Rustscan result parsing for easy copy/paste
 
 The __port-parser.py__ file is a simple python script that takes text input from a specified input file and returns the port numbers from the input file in the following format: x,x,x,x,x . Simply copy the scan results from either a rustscan or nmap port-scan to a text file, specify the port scanner you used, specify the input file, and then run the script.
 
