@@ -96,7 +96,7 @@ Open 10.10.11.152:49674
 Open 10.10.11.152:49696
 Open 10.10.11.152:61782
 
-** Copy everything from the first 'Open' to the last port number (in this case 61782) **
+** Copy everything from the first 'Open' to the last port number (in this case 61782) to a text file**
 
 Rustscan command:
 
