@@ -54,13 +54,54 @@ PORT     STATE    SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 1.66 seconds
 
-*** Copy everything from 21 to http-proxy (It will be different for you) ***
+*** Copy everything from 21 to http-proxy to a text file (What you copy will be different for you) ***
 
 
 Run the following since it is an nmap scan:
 
 h0ax@h0ax:~$ python3 port-parser.py --type nmap nmap-output-to-parse.txt
 21,22,23,25,53,80,110,111,135,139,143,443,445,993,995,1723,3306,3389,5900,8080
+
+
+** What it looks like for rustscan: **
+
+h0ax@h0ax:~$ rustscan -a 10.10.11.152 -b 500 -t 500
+.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
+| {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
+| .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
+`-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'
+The Modern Day Port Scanner.
+________________________________________
+: http://discord.skerritt.blog           :
+: https://github.com/RustScan/RustScan :
+ --------------------------------------
+0day was here ♥
+
+[~] The config file is expected to be at "/home/rustscan/.rustscan.toml"
+[~] File limit higher than batch size. Can increase speed by increasing batch size '-b 924'.
+Open 10.10.11.152:53
+Open 10.10.11.152:88
+Open 10.10.11.152:135
+Open 10.10.11.152:139
+Open 10.10.11.152:389
+Open 10.10.11.152:445
+Open 10.10.11.152:464
+Open 10.10.11.152:593
+Open 10.10.11.152:636
+Open 10.10.11.152:5986
+Open 10.10.11.152:9389
+Open 10.10.11.152:49673
+Open 10.10.11.152:49667
+Open 10.10.11.152:49674
+Open 10.10.11.152:49696
+Open 10.10.11.152:61782
+
+** Copy everything from the first 'Open' to the last port number (in this case 61782) **
+
+Rustscan command:
+
+h0ax@h0ax:~$ python3 port-parser.py --type rustscan rustscan-to-parse.txt 
+53,88,135,139,389,445,464,593,636,5986,9389,49667,49673,49674,49696,61782
 
 ```
 
